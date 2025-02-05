@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Contact</title>
+</head>
+<body>
+    <h1>Edit Contact</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }} <br>
+        {{ form.phone.label }} {{ form.phone() }} <br>
+        {{ form.email.label }} {{ form.email() }} <br>
+        {{ form.submit() }}
+    </form>
+    <a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>
